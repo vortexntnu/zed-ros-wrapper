@@ -1,3 +1,10 @@
+# zed-ros-wrapper
+This repo was "forked" to create an all inclusive repo for the zed camera, including important changes in the config files.
+
+## ZED camera configs
+Under zed_wrapper/params there are two config files. One common and one for the specific camera you are using. Make your changes there.
+
+
 ![](./images/Picto+STEREOLABS_Black.jpg)
 
 # Stereolabs ZED Camera - ROS Noetic Ninjemis Integration
