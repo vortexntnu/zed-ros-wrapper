@@ -27,7 +27,7 @@ general:
     base_frame:                 'base_link'                     # must be equal to the frame_id used in the URDF file
     verbose:                    false                           # Enable info message by the ZED SDK
     svo_compression:            2                               # `0`: LOSSLESS, `1`: AVCHD, `2`: HEVC
-    self_calib:                 false                            # enable/disable self calibration at starting
+    self_calib:                 true                            # enable/disable self calibration at starting
     camera_flip:                false
 
 video:
