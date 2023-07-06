@@ -27,8 +27,7 @@
 #include <string>
 #include <vector>
 
-namespace sl_tools
-{
+namespace sl_tools {
 /*! \brief Test if a file exist
  * \param name : the path to the file
  */
@@ -80,39 +79,38 @@ std::vector<std::string> split_string(const std::string& s, char seperator);
  * Tutorial:
  * https://www.myzhar.com/blog/tutorials/tutorial-exponential-weighted-average-good-moving-windows-average/
  */
-class CSmartMean
-{
+class CSmartMean {
 public:
-  CSmartMean(int winSize);
+    CSmartMean(int winSize);
 
-  int getValCount()
-  {
-    return mValCount;  ///< Return the number of values in the sequence
-  }
+    int getValCount()
+    {
+        return mValCount; ///< Return the number of values in the sequence
+    }
 
-  double getMean()
-  {
-    return mMean;  ///< Return the updated mean
-  }
+    double getMean()
+    {
+        return mMean; ///< Return the updated mean
+    }
 
-  /*!
-   * \brief addValue
-   * Add a value to the sequence
-   * \param val value to be added
-   * \return mean value
-   */
-  double addValue(double val);
+    /*!
+     * \brief addValue
+     * Add a value to the sequence
+     * \param val value to be added
+     * \return mean value
+     */
+    double addValue(double val);
 
 private:
-  int mWinSize;   ///< The size of the window (number of values ti evaluate)
-  int mValCount;  ///< The number of values in sequence
+    int mWinSize; ///< The size of the window (number of values ti evaluate)
+    int mValCount; ///< The number of values in sequence
 
-  double mMeanCorr;  ///< Used for bias correction
-  double mMean;      ///< The mean of the last \ref mWinSize values
+    double mMeanCorr; ///< Used for bias correction
+    double mMean; ///< The mean of the last \ref mWinSize values
 
-  double mGamma;  ///< Weight value
+    double mGamma; ///< Weight value
 };
 
-}  // namespace sl_tools
+} // namespace sl_tools
 
-#endif  // SL_TOOLS_H
+#endif // SL_TOOLS_H
