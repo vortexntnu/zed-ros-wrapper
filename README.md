@@ -4,6 +4,12 @@ This repo was "forked" to create an all inclusive repo for the zed camera, inclu
 ## ZED camera configs
 Under zed_wrapper/params there are two config files. One common and one for the specific camera you are using. Make your changes there.
 
+## Launch
+
+ZED 2i camera:
+
+    $ roslaunch zed_wrapper zed2i.launch
+
 
 ![](./images/Picto+STEREOLABS_Black.jpg)
 
